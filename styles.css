@@ -3,17 +3,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #87CEEB;
+  background-color: #fff; /* 改為白色背景 */
 }
 
 .container {
   display: grid;
   gap: 10px;
   padding: 10px;
-  background-color: #fff; /* White background for the block */
-  max-width: 1200px;
-  margin: 0 auto; /* Center align the container */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  background-color: #fff; /* 容器內也是白色背景 */
+  width: 100%; /* 改為占滿螢幕寬度 */
+  box-sizing: border-box; /* 確保內邊距和框線計算在寬度內 */
 }
 
 .box {
@@ -67,15 +66,16 @@ body {
 
   .box1 {
     height: 125px;
-    background-color: #90EE90; /* Green background for Header */
+    background-color: #90EE90; /* 綠色背景 */
   }
 
   .box2, .box3, .box4 {
     height: 75px;
-    background-color: #ADD8E6; /* Blue background for Content */
+    background-color: #ADD8E6; /* 藍色背景 */
   }
-  .box5, .box6, .box7, .box8{ 
+
+  .box5, .box6, .box7, .box8 {
     height: 50px;
-    background-color: #D3D3D3; /* Light grey background for Footer */
+    background-color: #D3D3D3; /* 灰色背景 */
   }
 }

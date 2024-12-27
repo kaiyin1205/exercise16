@@ -52,17 +52,35 @@ body {
 /* Layout for smaller screens */
 @media (max-width: 479px) {
   .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr; /* 每行設為兩欄，均分寬度 */
     grid-template-areas:
-      "box1"
-      "box2"
-      "box3"
-      "box4"
-      "box5"
-      "box6"
-      "box7"
-      "box8";
+      "box1 box1"
+      "box2 box2"
+      "box3 box3"
+      "box4 box4"
+      "box5 box6"
+      "box7 box8";
   }
+
+  .box1 {
+    grid-column: span 2; /* 占據兩欄（整行） */
+    height: 125px;
+    background-color: #90EE90; /* 綠色背景 */
+  }
+
+  .box2, .box3, .box4 {
+    grid-column: span 2; /* 占據兩欄（整行） */
+    height: 75px;
+    background-color: #ADD8E6; /* 藍色背景 */
+  }
+
+  .box5, .box6, .box7, .box8 {
+    grid-column: span 1; /* 每個只占據一欄 */
+    height: 50px;
+    background-color: #D3D3D3; /* 灰色背景 */
+  }
+}
+
 
   .box1 {
     height: 125px;
@@ -79,3 +97,4 @@ body {
     background-color: #D3D3D3; /* 灰色背景 */
   }
 }
+

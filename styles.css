@@ -80,21 +80,3 @@ body {
     background-color: #D3D3D3; /* 灰色背景 */
   }
 }
-
-
-  .box1 {
-    height: 125px;
-    background-color: #90EE90; /* 綠色背景 */
-  }
-
-  .box2, .box3, .box4 {
-    height: 75px;
-    background-color: #ADD8E6; /* 藍色背景 */
-  }
-
-  .box5, .box6, .box7, .box8 {
-    height: 50px;
-    background-color: #D3D3D3; /* 灰色背景 */
-  }
-}
-

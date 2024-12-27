@@ -50,7 +50,7 @@ body {
 }
 
 /* Layout for smaller screens */
-@media (max-width: 479px) {
+@media (max-width: 500px) {
   .container {
     grid-template-columns: 1fr 1fr; /* 每行設為兩欄，均分寬度 */
     grid-template-areas:
